@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/mail">
+        <input type="text" placeholder="Name:" name="name">
+        <input type="email" placeholder="Email:" name="mailId">
+        <input type="text" placeholder="Password:" name="password">
+        <button type="submit">Submit</button>
+        <% if (locals.response) { %>
+            <h3 style="color: green;"><%= response %></h3>
+        <% } %>
+    </form>
+</body>
+</html>
