@@ -33,4 +33,4 @@ app.post('/mail' , async (req , res) => {
         response:"Done"
       })
 })
-app.listen(PORT , () => console.log("Server is listening on " , PORT))
+app.listen(PORT , () => console.log("Server is listening on" , PORT))
